@@ -8,27 +8,36 @@
         <title>Assignment 2.5 - Accessible Profile Images and Media</title>
     </head>
     <body>
+        <h1>Jane Doe | Brand Strategist & Growth Hacker</h1>
         <img
         src="./images/profile.jpg"
-        alt="Stylish man in coat with glasses and smartphone beside a vintage car in the city."
+        alt="Jane Doe is a senior marketing director."
         width="256"
         height="320"
         />
+
+        <p>Jane Doe is a senior marketing director with over 8 years of experience in brand strategy and digital growth. Skilled in data-driven campaigns and team leadership, she helps companies scale their market presence. She holds a B.A. in Communications from the University of Lagos and loves hiking and community volunteering in her spare time.</p>
     <figure>
         <img 
         src="images/wolf.jpg"
         width="320"
         height="213"
+        alt=""
         />
         <figcaption>
-        Gray wolf portrait in a dark green forest.
+        The picture of a Gray Wolf Jane Doe encountered during hiking.
         </figcaption>
     </figure>
 
     <h2>Audio Embedded</h2>
     <audio
         controls 
-        src="music/instrumental.mp3">
+        >
+        <source 
+            src="music/instrumental.mp3"
+            type="audio/mpeg"/>
+           Your browser does not support audio.
+
     </audio>
 
     <h2>Video Embedded</h2>
@@ -44,7 +53,7 @@
             type="video/webm" 
             />
 
-        <p>This page provide the same video in a mp4 and webm format in case of network or browser compatibility</p>
+        <p>Your browser doesn't support this video. Here is a <a href="https://github.com/mdn/learning-area/raw/refs/heads/main/html/multimedia-and-embedding/tasks/audio-video/video.mp4">link to the video</a> instead.</p>
     </video>
     </body>
 </html>
