@@ -11,6 +11,10 @@
         <h1>Tech Prophet Free Mentorship Application Form</h1>
         <form>
             <h2>Personal Information (All Information Required)</h2>
+                <fieldset>
+                    <legend>Personal Information (All Information Required)</legend>
+
+
                 <p>
                     <label for="name"> Full Name: </label>
                     <input type="text" name="name" required />
@@ -23,9 +27,17 @@
                     <input type="tel" name="phone-number" required />
                 </p>
                 <p>
-                    <label for="dob">Date of Birth: </label>
-                    <input type="date" name="dob" required />
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required />
                 </p>
+
+                    <input type="radio" id="gender-male" name="gender" value="male" checked />
+                    <label for="gender-male">Male</label>
+
+                    <input type="radio" id="gender-female" name="gender" value="female" />
+                    <label for="gender-female">Female</label>
+                </fieldset>
+
             <h2>Development Information</h2>
             <h2>Other</h2>
             <button>Submit</button>
