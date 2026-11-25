@@ -9,38 +9,47 @@
     </head>
     <body>
         <h1>Tech Prophet Free Mentorship Application Form</h1>
-        <form>
-            <h2>Personal Information (All Information Required)</h2>
-                <fieldset>
-                    <legend>Personal Information (All Information Required)</legend>
-
-
+        <form action="./submit_application" method="POST">
+            <fieldset>
+            <legend>Personal Information (All Information Required)</legend>
                 <p>
                     <label for="name"> Full Name: </label>
-                    <input type="text" name="name" required />
+                    <input type="text" name="name" id="name" required />
                 </p>
                 <p>
                     <label for="email"> Email Address: </label>
-                    <input type="email" name="email" required />
+                    <input type="email" name="email" id="email" required />
 
                     <label for="phone-number"> Phone Number: </label>
-                    <input type="tel" name="phone-number" required />
+                    <input type="tel" name="phone-number"  id="phone-number" required />
                 </p>
                 <p>
                     <label for="dob">Date of Birth:</label>
                     <input type="date" id="dob" name="dob" required />
-                </p>
 
-                    <input type="radio" id="gender-male" name="gender" value="male" checked />
+                <fieldset>
+                    <legend>Gender</legend>
+                    <!-- <label for="dob"> Gender</label> -->
+                    <input type="radio" id="gender-male" name="gender" value="gender-male" checked />
                     <label for="gender-male">Male</label>
 
-                    <input type="radio" id="gender-female" name="gender" value="female" />
+                    <input type="radio" id="gender-female" name="gender" value="gender-female" />
                     <label for="gender-female">Female</label>
+
+                    <input type="radio" id="gender-unknown" name="gender" value="gender-unknown"/>
+                    <label for="gender-unknown">Prefer Not to Say</label>
+                </fieldset>                
+    
                 </fieldset>
 
-            <h2>Development Information</h2>
+                <fieldset>
+                    <legend>Development Information</legend>
+
+                </fieldset>        
+                
+
             <h2>Other</h2>
-            <button>Submit</button>
+            <button type="submit" >Submit Application</button>
         </form>
     </body>
 </html>
