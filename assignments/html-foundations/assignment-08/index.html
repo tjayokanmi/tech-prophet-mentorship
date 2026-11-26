@@ -11,146 +11,44 @@
         <h1>Tech Prophet Free Mentorship Application Form</h1>
         <form action="./submit_application" method="POST">
             <fieldset>
-            <legend>Personal Information (All Information Required)</legend>
-                <p>
-                    <label for="name"> Full Name: </label>
-                    <input type="text" name="name" id="name" required />
-                </p>
-                <p>
-                    <label for="email"> Email Address: </label>
-                    <input type="email" name="email" id="email" required />
+                <legend>Personal Information (All Information Required)</legend>
+                    <p>
+                        <label for="name"> Full Name: </label>
+                        <input type="text" name="name" id="name" required />
+                    </p>
+                    <p>
+                        <label for="email"> Email Address: </label>
+                        <input type="email" name="email" id="email" required />
 
-                    <label for="phone-number"> Phone Number: </label>
-                    <input type="tel" name="phone-number"  id="phone-number" required />
-                </p>
-                <p>
-                    <label for="dob">Date of Birth:</label>
-                    <input type="date" id="dob" name="dob" required />
+                        <label for="phone-number"> Phone Number: </label>
+                        <input type="tel" name="phone-number"  id="phone-number" required />
+                    </p>
+                    <p>
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" id="dob" name="dob" required />
 
-                <fieldset>
-                    <legend>Gender</legend>
-                    <!-- <label for="dob"> Gender</label> -->
-                    <input type="radio" id="gender-male" name="gender" value="gender-male" checked />
-                    <label for="gender-male">Male</label>
+                    <fieldset>
+                        <legend>Gender</legend>
+                        <input type="radio" id="gender-male" name="gender" value="male" checked />
+                        <label for="gender-male">Male</label>
 
-                    <input type="radio" id="gender-female" name="gender" value="gender-female" />
-                    <label for="gender-female">Female</label>
+                        <input type="radio" id="gender-female" name="gender" value="female" />
+                        <label for="gender-female">Female</label>
 
-                    <input type="radio" id="gender-unknown" name="gender" value="gender-unknown"/>
-                    <label for="gender-unknown">Prefer Not to Say</label>
-                </fieldset>                
+                        <input type="radio" id="gender-unknown" name="gender" value="prefer-not-to-say"/>
+                        <label for="gender-unknown">Prefer Not to Say</label>
+                    </fieldset>                
     
                 </fieldset>
 
                 <fieldset>
                     <legend>Development Information</legend>
+                    <label for></label>
 
-                    <label>
-                        Current Experience Level:
-                        <select required>
-                            <option value=""> Please choose an option</option>
-                            <option value="Beginner">Beginner</option>
-                            <option value="Intermediate">Intermediate</option>
-                            <option value="Expert">Expert</option>
-                        </select>
-                    </label>
-                    <p>
-                        <label>
-                            Area of Interest:
-                            
-                            <label value="ai-engineering">
-                                AI Engineering
-                                <input type="checkbox" />
-                            </label>
-                            
-                            <label value="backend">
-                                Back End Engineering
-                                <input type="checkbox" />
-                            </label>                         
-                            
-                            <label value="Cybersecurity">
-                                Cybersecurity
-                                <input type="checkbox" />
-                            </label>
 
-                            <label value="data science">
-                                Data Science
-                                <input type="checkbox" />
-                            </label>
-
-                            <label value="backend">
-                                Back End Engineering
-                                <input type="checkbox" />
-                            </label>                            
-                            
-                            <label value="Full-stack">
-                                Full Stack Software Engineering
-                                <input type="checkbox" />
-                            </label>
-                            
-                            <label value="Machine Learning"> 
-                                Machine Learning
-                                <input type="checkbox" />                      
-                            </label>
-                            <label value="UI/UX">
-                                UI/UX 
-                                <input type="checkbox" />
-                            </label>
-
-                        </label>
-                    </p>
-                    <p>
-                        <label>
-                            Preferred Learning Track 
-                            <select>
-                                <option>Choose an Option</option>
-                                <option value="AI Engineering">AI Engineering</option>
-                                <option value="Backend"> Back End Engineering</option>
-                                <option value="Cybersecurity">Cybersecurity</option>
-                                <option value="Data Science">Data Science</option>
-                                <option value="Frontend">Front End Engineering</option>
-                                <option value="Full-stack">Full Stack Software Engineering</option>
-                                <option value="ML">Machine Learning</option>
-                               
-                             </select>
-                        </label>
-                    </p>
-                    <p>
-                        <label>
-                            Github Profile URL
-                            <input type="url" required>
-                        </label> 
-                    </p>
-                    <p>
-                        <label>
-                            Why Do You Want to Join The Mentorship?
-                            <textarea rows="5" cols="33"> </textarea>
-                        </label>
-
-                    </p>
-                </fieldset>        
-                
-
-            <fieldset>
-                <legend>Other</legend>
-                <p>
-                    <label>
-                        Availability
-                        <input type="radio" />
-                        <label value="onsite">On-site</label>
-                        <input type="radio" />
-                        <label value="Online">Online</label>
-                    </label>                    
-                </p>
-                <p>
-                    <label>Agreement to mentorship rules
-                        <label value="Yes">Yes</label>
-                        <input type="radio" name = "agreement" checked/>
-                      
-                        <label value="No">No</label> 
-                        <input type="radio" name="agreement"/>
-                    </label>
-                </p>
+                </fieldset>
+                   
+                </fieldset>
             </fieldset>
             <button type="submit">Submit Application</button>
         </form>
