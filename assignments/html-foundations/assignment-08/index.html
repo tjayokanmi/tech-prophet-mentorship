@@ -51,18 +51,8 @@
                             <option value="beginner">Beginner</option>
                             <option value="intermediate">Intermediate</option>
                             <option value="advanced">Advanced</option>
-                        </select>
-                    
-                    <!-- <label>Current Experience Level</label>
-
-                    <input type="radio" id="beginner" name="experience" value= "beginner" checked/>
-                    <label for="beginner">Beginner</label>
-
-                    <input type="radio" id="intermediate" name="experience" value="intermediate" />
-                    <label for="intermediate">Intermediate</label>
-
-                    <input type="radio" id="advanced" name="experience" value="advanced" />
-                    <label for="advanced">Advanced</label>                    -->
+                        </select>                    
+                   
                     <p>Areas of Interest</p>
                         <input type="checkbox" id="ai" name="interest" value="ai-engineering" />
                         <label for="ai">AI Engineering</label>
@@ -111,9 +101,7 @@
                             <input type="url" name="github-url" id="url" required />
                         </p>
 
-                    </fieldset>
-
-                                     
+                    </fieldset>                                     
                 
                    
             </fieldset>
@@ -128,12 +116,18 @@
                     </fieldset>                    
                 </p>
 
-                <p>
+                <!-- <p>
                     <label>Agreement to mentorship rules</label>
                         <input type="radio" id="yes" value="yes" name = "agreement" required />
                         <label for="yes" >Yes</label>
-                </p>
-            </fieldset>                                                  
+                </p> -->
+            </fieldset>
+            
+            <fieldset>
+                <legend>Mentorship Rules Agreement</legend>
+                <input type="checkbox" name="agreement" id="agreement" value="yes" required />
+                <label for="agreement">I have read and agree to the mentorship rules.</label>
+            </fieldset>
 
             <button type="submit">Submit Application</button>
         </form>
