@@ -26,6 +26,7 @@
                     <p>
                         <label for="dob">Date of Birth:</label>
                         <input type="date" id="dob" name="dob" required />
+                    </p>
 
                     <fieldset>
                         <legend>Gender</legend>
@@ -43,13 +44,38 @@
 
                 <fieldset>
                     <legend>Development Information</legend>
-                    <label for="experience">Current Experience Level</label>
+                    <label>Current Experience Level</label>
 
+                    <input type="radio" id="beginner" name="experience" value= "beginner" checked/>
+                    <label for="beginner">Beginner</label>
 
+                    <input type="radio" id="intermediate" name="experience" value="intermediate" />
+                    <label for="intermediate">Intermediate</label>
+
+                    <input type="radio" id="advanced" name="experience" value="advanced" />
+                    <label for="advanced">Advanced</label>                   
                 </fieldset>
                    
-                </fieldset>
             </fieldset>
+            <fieldset>
+                <legend>Other</legend>
+                <p>
+                    <label>
+                        Availability
+                        <input type="radio" value="onsite" id="onsite" name="availability"/>
+                        <label for= "onsite">On-site</label>
+                        <input type="radio"  value = "online" name="availability" id ="online" />
+                        <label for="online">Online</label>
+                    </label>                    
+                </p>
+
+                <p>
+                    <legend>Agreement to mentorship rules</legend>
+                        <input type="radio" id="yes" value="yes" name = "agreement" required />
+                        <label for="yes" >Yes</label>
+                </p>
+            </fieldset>                                                  
+
             <button type="submit">Submit Application</button>
         </form>
     </body>
