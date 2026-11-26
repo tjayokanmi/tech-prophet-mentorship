@@ -9,9 +9,13 @@
     </head>
     <body>
         <h1>Tech Prophet Free Mentorship Application Form</h1>
+        <!--
+    This is an illustrative endpoint because no
+    backend has been implemented for this assignment.
+-->
         <form action="./submit_application" method="POST">
             <fieldset>
-                <legend>Personal Information (All Information Required)</legend>
+                <legend>Personal Information</legend>
                     <p>
                         <label for="name"> Full Name: </label>
                         <input type="text" name="name" id="name" required />
@@ -52,8 +56,9 @@
                             <option value="intermediate">Intermediate</option>
                             <option value="advanced">Advanced</option>
                         </select>                    
-                   
-                    <p>Areas of Interest</p>
+                    
+                    <fieldset>
+                    <legend>Areas of Interest</legend>
                         <input type="checkbox" id="ai" name="interest" value="ai-engineering" />
                         <label for="ai">AI Engineering</label>
 
@@ -74,6 +79,7 @@
 
                         <input type="checkbox" name="interest" id="ui-ux" value="ui-ux" />
                         <label for="ui-ux">UI/UX</label>
+                    </fieldset>
 
                         <p>
                             <label for="track" >Preferred Learning Track</label>
@@ -85,8 +91,28 @@
                                 <option value="frontend-development">Frontend Development</option>
                                 <option value="full-stack-development">Full Stack Development</option>
                             </select>  
+                        </p>                     
+                        
+                        <p>
+                            <label for="url">GitHub Profile Url</label>
+                            <input type="url" name="github-url" id="url" required />
                         </p>
-                        <fieldset>
+                   </fieldset>                                         
+                   
+
+                     <fieldset>
+                        <legend>Motivation</legend>
+                        <label for="motivation" >Why do you want to join the mentorship?</label>
+                        <textarea id="motivation" required maxlength="500" name="why" rows="5" cols="40"></textarea>
+                    </fieldset>
+                
+                <fieldset>
+                    <legend>Mentorship Rules Agreement</legend>
+                    <input type="checkbox" name="agreement" id="agreement" value="yes" required />
+                    <label for="agreement">I have read and agree to the mentorship rules.</label>
+                </fieldset>
+                
+                <fieldset>
                             <legend>Availability</legend>
                             
                             <input type="radio" id="onsite" name="availability" value="onsite" />
@@ -94,41 +120,8 @@
 
                             <input type="radio" id="online" name="availability" value="online" />
                             <label for="online">Online</label>
-                        </fieldset>
-
-                        <p>
-                            <label for="url">GitHub Profile Url</label>
-                            <input type="url" name="github-url" id="url" required />
-                        </p>
-
-                    </fieldset>                                     
-                
-                   
-            </fieldset>
-            <fieldset>
-                <legend>Other</legend>
-                    <fieldset>
-                        <legend>Availability</legend>
-                        <input type="radio" value="onsite" id="onsite" name="availability"/>
-                        <label for= "onsite">On-site</label>
-                        <input type="radio"  value = "online" name="availability" id ="online" />
-                        <label for="online">Online</label>
-                    </fieldset>                    
-                </p>
-
-                <!-- <p>
-                    <label>Agreement to mentorship rules</label>
-                        <input type="radio" id="yes" value="yes" name = "agreement" required />
-                        <label for="yes" >Yes</label>
-                </p> -->
-            </fieldset>
-            
-            <fieldset>
-                <legend>Mentorship Rules Agreement</legend>
-                <input type="checkbox" name="agreement" id="agreement" value="yes" required />
-                <label for="agreement">I have read and agree to the mentorship rules.</label>
-            </fieldset>
-
+                </fieldset>         
+           
             <button type="submit">Submit Application</button>
         </form>
     </body>
